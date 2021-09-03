@@ -8,25 +8,35 @@ function App({ name1,name2, place,lovedate, txhash, txlink, date }) {
     <div className="App">
       <Icon />
       <div className="row">
-      <p className="byline" style={{"color":"white"}}>Certificate of </p><p className="byline" style={{"color":"red"}}><b>Love</b></p>
+      <p className="byline" style={{"color":"red"}}>Certificate of <b>Love</b></p>
       </div>
       
       <div className="content">
-        <h1>{name1} Love {name2}</h1>
+        <h1>{name1}</h1>
+        <h1 style={{"color":"red"}}>Love</h1>
+        <h1>{name2}</h1>
         <p>Place of Love</p>
-        <h2>{place}</h2>
+        <h2 style={{"color":"white"}}>{place}</h2>
         <p>Date of Love</p>
-        <h2>{lovedate}</h2>
-        <p>Trx Hash</p>
-        <h2>{txhash}</h2>
-        <p>Trx Link</p>
-        <h2>{txlink}</h2>
+        <h2 style={{"color":"white"}}>{lovedate}</h2>
       </div>
 
       {date && (
         <p className="date">
           Issued on{' '}
           <span className="bold">{date}</span>
+        </p>
+      )}
+      {date && (
+        <p className="date">
+          Trx Hash{' '}
+          <span className="bold">{txhash}</span>
+        </p>
+      )}
+      {date && (
+        <p className="date">
+          Trx Link{' '}
+          <span className="bold">{txlink}</span>
         </p>
       )}
     </div>
@@ -36,7 +46,7 @@ function App({ name1,name2, place,lovedate, txhash, txlink, date }) {
 App.defaultProps = {
   name1: 'James Lee',
   name2: 'James Lee',
-  place: 'Creating PDFs with React & Make.cm',
+  place: 'Bangalore',
   lovedate:"10-01-2021",
   txhash:"sample",
   txlink:"link",
