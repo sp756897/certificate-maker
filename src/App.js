@@ -24,19 +24,19 @@ function App({ name1,name2, place,lovedate, txhash, txlink, date }) {
       {date && (
         <p className="date">
           Issued on{' '}
-          <span className="bold">{date}</span>
+          <span className="bold" style={{"color":"white"}}>{date}</span>
         </p>
       )}
       {date && (
         <p className="date">
           Trx Hash{' '}
-          <span className="bold">{txhash}</span>
+          <span className="bold" style={{"color":"white"}}>{txhash}</span>
         </p>
       )}
       {date && (
         <p className="date">
           Trx Link{' '}
-          <span className="bold">{txlink}</span>
+          <span className="bold" style={{"color":"white"}}>{txlink}</span>
         </p>
       )}
     </div>
