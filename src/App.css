@@ -85,10 +85,10 @@ svg {
 
 .date {
   position: relative;
-  top: 45rem;
+  top: 39rem;
   bottom: 2.5rem;
   font-size: 18px;
-  max-width:400px;
+  max-width:450px;
   word-wrap:break-word;
 }
 
