@@ -21,6 +21,7 @@ function App({ name1,name2, place,lovedate, txhash, txlink, date }) {
         <h2 style={{"color":"white"}}>{lovedate}</h2>
       </div>
 
+      <div class="container">
       {date && (
         <p className="date">
           Issued on{' '}
@@ -39,6 +40,7 @@ function App({ name1,name2, place,lovedate, txhash, txlink, date }) {
           <span className="bold" style={{"color":"white"}}>{txlink}</span>
         </p>
       )}
+      </div>
     </div>
   );
 }
@@ -48,7 +50,7 @@ App.defaultProps = {
   name2: 'James Lee',
   place: 'Bangalore',
   lovedate:"10-01-2021",
-  txhash:"sample",
+  txhash:"fdffddfdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
   txlink:"link",
   date: 'March 15 2021'
 }
